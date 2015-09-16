@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+      <item android:id="@+id/home"
+            android:title="@string/menu_home"
+            android:orderInCategory="1"
+            app:showAsAction="never"/>
+
+      <item android:id="@+id/daily_commutes"
+            android:title="@string/menu_daily_commutes"
+            android:orderInCategory="2"
+            app:showAsAction="never"/>
+
+      <item android:id="@+id/office_stats"
+            android:title="@string/menu_office_stats"
+            android:orderInCategory="3"
+            app:showAsAction="never"/>
+
+      <item android:id="@+id/leaderboard"
+            android:title="@string/menu_leaderboard"
+            android:orderInCategory="4"
+            app:showAsAction="never"/>
+
+      <item android:id="@+id/settings"
+            android:title="@string/menu_settings"
+            android:orderInCategory="5"
+            app:showAsAction="never"/>
+
+    <item android:id="@+id/action_logout"
+          android:title="@string/menu_logout"
+          android:orderInCategory="6"
+          app:showAsAction="never"/>
+
+</menu>

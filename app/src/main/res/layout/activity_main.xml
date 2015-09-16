@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_after_large"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="This year, you have logged"
+            android:id="@+id/thisYearIntro"
+            style="@style/standardText"/>
+
+        <TextView
+            android:text="\? mi"
+            android:id="@+id/thisYearMiles"
+            style="@style/largeRorangeText"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/space_after_large"
+            android:background="@color/lightgray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_after_large"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Today, you have logged"
+                android:id="@+id/todayIntro"
+                style="@style/standardText"/>
+
+            <TextView
+                android:text="\? mi"
+                android:id="@+id/todayMiles"
+                style="@style/standardTextRorange"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addTripButton"
+            android:text="add standard trip"
+            android:layout_marginTop="@dimen/space_after_med"
+            style="@style/ButtonDark"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

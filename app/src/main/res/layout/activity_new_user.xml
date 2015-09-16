@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.rbompiani.srglowcarboncommute.NewUserActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/bike2"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:layout_marginRight="-50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commuteTypeQuestion"
+            android:text="How do you typically commute?"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/font_size_medium"
+            android:layout_marginBottom="@dimen/space_after_med"/>
+
+        <RadioGroup
+            android:id="@+id/commuteType"
+            android:layout_below="@+id/commuteTypeQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inner_margin"
+            android:layout_marginBottom="@dimen/space_after_large">
+
+            <RadioButton
+                android:id="@+id/walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="walk"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_size_medium"
+
+                android:layout_marginBottom="@dimen/space_after_small"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bike"
+                android:id="@+id/bike"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_size_medium"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/milesQuestion"
+            android:text="How far is your trip one way?"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/font_size_medium"
+            android:layout_below="@+id/commuteType"
+            android:layout_marginBottom="@dimen/space_after_small"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="2"
+            android:id="@+id/milesInput"
+            android:layout_below="@id/milesQuestion"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/font_size_medium"
+            android:layout_marginLeft="@dimen/inner_margin"
+            android:gravity="bottom|center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="miles"
+            android:layout_toRightOf="@id/milesInput"
+            android:layout_alignBottom="@+id/milesInput"
+            android:id="@+id/milesLabel"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/font_size_medium"
+            android:layout_marginLeft="@dimen/margin_label_left"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/miles"
+            android:text="Which office do you work in?"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/font_size_medium"
+            android:layout_below="@+id/milesInput"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/space_after_large"
+            android:layout_marginBottom="@dimen/space_after_med"/>
+
+            <RadioGroup
+                android:id="@+id/officeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_after_large"
+                android:layout_below="@id/miles">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/inner_margin"
+                    android:text="Portland"
+                    android:id="@+id/portlandInput"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/font_size_medium"
+                    android:layout_marginBottom="@dimen/space_after_small"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/inner_margin"
+                    android:text="Seattle"
+                    android:id="@+id/seattleInput"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/font_size_medium"
+                    android:layout_marginBottom="@dimen/space_after_small"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:text="submit"
+                style="@style/ButtonDark"
+                android:layout_below="@id/officeInput"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

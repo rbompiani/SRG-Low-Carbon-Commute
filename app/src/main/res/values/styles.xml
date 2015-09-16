@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="SignupLinearWrapper">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginLeft">@dimen/inner_margin</item>
+        <item name="android:layout_marginRight">@dimen/inner_margin</item>
+    </style>
+
+    <style name="InputField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/borderbox</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:padding">@dimen/fieldPadding</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/fieldSpacing</item>
+    </style>
+
+    <style name="ButtonLight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginTop">@dimen/fieldSpacing</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/darkgray</item>
+    </style>
+
+    <style name="ButtonDark" parent="ButtonLight">
+        <item name="android:background">@color/rorange</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name ="android:layout_marginLeft">@dimen/inner_margin</item>
+        <item name ="android:layout_marginRight">@dimen/inner_margin</item>
+    </style>
+
+    <style name="SignupLinearWrapperLarge" parent="SignupLinearWrapper">
+        <item name="android:layout_marginTop">@dimen/large_inner_margin</item>
+        <item name="android:layout_marginLeft">@dimen/large_inner_margin</item>
+        <item name="android:layout_marginRight">@dimen/large_inner_margin</item>
+    </style>
+
+    <style name="standardText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:layout_marginLeft">@dimen/margin_label_left</item>
+    </style>
+
+    <style name="standardTextRorange" parent="standardText">
+        <item name="android:textColor">@color/rorange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="largeRorangeText">
+        <item name="android:layout_below">@id/thisYearIntro</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/rorange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/space_after_med</item>
+    </style>
+
+</resources>

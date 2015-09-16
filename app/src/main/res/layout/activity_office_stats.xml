@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_after_large"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="2015 Office Stats"
+            android:id="@+id/thisYearIntro"
+            style="@style/standardText"/>
+
+        <TextView
+            android:text="\? mi"
+            android:id="@+id/thisYearMiles"
+            style="@style/largeRorangeText"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/space_after_large"
+            android:background="@color/lightgray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/space_after_med">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:id="@+id/portland_title"
+                    android:text="Portland"
+                    android:background="@color/rorange"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    style="@style/standardText"
+                    android:text="\? mi"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/portland_total_miles"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/seattle_title"
+                    android:text="Seattle"
+                    android:background="@color/blue"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    style="@style/standardText"
+                    android:text="\? mi"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:id="@+id/seattle_total_miles"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_after_large"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="See the office"
+                android:id="@+id/todayIntro"
+                style="@style/standardText"/>
+
+            <TextView
+                android:text="leaderboard"
+                android:id="@+id/todayMiles"
+                style="@style/standardTextRorange"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

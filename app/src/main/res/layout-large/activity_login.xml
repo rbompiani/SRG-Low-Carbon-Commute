@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.rbompiani.srglowcarboncommute.LoginActivity"
+                android:background="#ff5038">
+    <LinearLayout
+        style="@style/SignupLinearWrapperLarge">
+
+        <EditText
+            android:id="@+id/usernameField"
+            android:hint="username"
+            style="@style/InputField"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passwordField"
+            android:hint="password"
+            android:background="@drawable/borderbox"
+            style="@style/InputField"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:text="log in"
+            style="@style/ButtonLight"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:id="@+id/bikeIcon"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bikewhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="sign up"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:id="@+id/signupButton"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/srgwhite"
+        android:alpha=".15"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        />
+
+</RelativeLayout>
